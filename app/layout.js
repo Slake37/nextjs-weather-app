@@ -1,3 +1,4 @@
+import Navigation from './components/Navigation'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -11,7 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="bg-gradient-to-b from-[#222831] to-[#00ADB5] min-h-screen max-w-[1440px] m-auto flex flex-col justify-center items-center">
+        <Navigation />
+        {children}</body>
     </html>
   )
 }
