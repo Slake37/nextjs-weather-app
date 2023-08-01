@@ -18,7 +18,7 @@ const ThreedDaysForecast =async ({location}) => {
       <h1 className="text-2xl underline">Next 3 days forecast</h1>
       <div className="flex justify-between items-center w-full mt-5">
         {threeDaysForecast.forecast.forecastday.map((data) => (
-          <div className='flex flex-col justify-center items-center mx-4 border-2 rounded-md drop-shadow-2xl p-1'>
+          <div className='flex flex-col justify-center items-center mx-4 border-2 rounded-md drop-shadow-2xl p-3'>
             <p>{data.date}</p>
             <img src={data.day.condition.icon} alt="" />
             <div className='flex justify-center items-center text-center'>
